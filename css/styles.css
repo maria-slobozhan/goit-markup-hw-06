@@ -179,9 +179,17 @@ img {
 .hero-button {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 32px;
+}
+
+.main-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
@@ -194,8 +202,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.main-btn:hover,
+.main-btn:focus {
   background-color: #188ce8;
 }
 
@@ -528,14 +536,15 @@ img {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-content .block {
-  flex-basis: calc(100% / 4 - 70px);
+  flex-basis: calc((50% - 45px) / 2);
 }
 
-.footer-content .block:not(:last-child) {
-  margin-right: 70px;
+.footer-content .block:last-child {
+  flex-basis: calc(50% - 15px);
 }
 
 .footer-content .contact-list {
@@ -559,7 +568,7 @@ img {
 }
 
 .social-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
@@ -569,9 +578,9 @@ img {
   color: var(--hero-text-color);
 }
 
-.footer-socials {
+.footer-socials,
+.footer-form {
   padding-top: 72px;
-  padding-bottom: 100px;
 }
 
 .footer-content .logo {
@@ -601,6 +610,27 @@ img {
 
 .logo-footer {
   color: var(--hero-text-color);
+}
+
+.fotter-form-field {
+  width: 352px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+}
+
+.send-icon {
+  margin-left: 10px;
+}
+
+.fotter-form-field::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Модалка */
