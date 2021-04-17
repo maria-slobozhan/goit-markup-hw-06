@@ -195,7 +195,7 @@ img {
 }
 
 .main-btn {
-  display: inline-flex;
+  display: block;
   align-items: center;
   justify-content: center;
   width: 200px;
@@ -585,6 +585,10 @@ img {
   padding-top: 72px;
 }
 
+.form-button {
+  display: inline-flex;
+}
+
 .footer-content .logo {
   display: block;
   margin-bottom: 20px;
@@ -705,11 +709,11 @@ img {
 }
 
 .modal-form {
-  padding: 23px 40px;
+  padding: 40px;
 }
 
 .modal-title {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -717,25 +721,33 @@ img {
   color: var(--title-color);
 }
 
+.form-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
 .form-field {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 0;
   padding: 0;
-}
-
-.form-label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
 }
 
 .form-input {
   padding: 11px;
   padding-left: 35px;
+  margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
